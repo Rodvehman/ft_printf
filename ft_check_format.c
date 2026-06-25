@@ -14,6 +14,8 @@
 
 int	ft_check_format(va_list *args, char specifier)
 {
+	if (!specifier)
+		return (-1);
 	if (specifier == 'c')
 		return (ft_print_char(va_arg(*args, int)));
 	else if (specifier == 's')

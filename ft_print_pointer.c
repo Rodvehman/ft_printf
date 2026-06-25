@@ -14,12 +14,12 @@
 
 int	ft_print_pointer(unsigned long value)
 {
-	int		cont;
+	int		count;
 
-	cont = 0;
+	count = 0;
 	if (value == 0)
 		return (write(1, "(nil)", 5));
-	cont += write(1, "0x", 2);
-	cont += ft_print_hexa('x', value);
-	return (cont);
+	count += write(1, "0x", 2);
+	count += ft_print_hexa('x', value);
+	return (count);
 }
