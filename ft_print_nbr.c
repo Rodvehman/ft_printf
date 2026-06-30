@@ -23,13 +23,14 @@ int	ft_print_nbr(long nb)
 	{
 		if (ft_print_char('-') == -1)
 			return (-1);
-		nbr = (size_t) -nb;
+		nbr = (size_t) - nb;
 		count++;
 	}
 	else
 		nbr = (size_t) nb;
 	if (nbr > 9)
-	{	r_value = ft_print_nbr(nbr / 10);
+	{
+		r_value = ft_print_nbr(nbr / 10);
 		if (r_value == -1)
 			return (-1);
 		count += r_value;
